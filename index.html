@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BIT / BRIEF</title>
+<meta name="description" content="A personal automation that turns trusted IT news into short daily videos.">
+<style>
+  :root{color-scheme:dark;--bg:#07080F;--card:#10121F;--ink:#fff;--soft:rgba(255,255,255,.68);
+        --faint:rgba(255,255,255,.34);--brand:#22E0C8;--line:rgba(255,255,255,.1)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:17px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+  .wrap{max-width:720px;margin:0 auto;padding:72px 20px 96px}
+  .mark{display:inline-flex;align-items:center;gap:12px;padding:10px 22px;border-radius:999px;
+        border:2px solid var(--brand);background:rgba(34,224,200,.08);font-weight:800;letter-spacing:1px}
+  .dot{width:12px;height:12px;border-radius:3px;background:var(--brand)}
+  h1{font-size:clamp(32px,6vw,46px);line-height:1.12;letter-spacing:-1.2px;margin:28px 0 14px}
+  h2{font-size:21px;letter-spacing:-.3px;margin:40px 0 12px}
+  p{color:var(--soft);margin:0 0 16px}
+  ol{color:var(--soft);padding-left:22px}
+  li{margin:0 0 10px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;margin:28px 0}
+  a{color:var(--brand)}
+  footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--faint);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark"><span class="dot"></span>BIT / BRIEF</div>
+
+  <h1>Short daily videos about information technology.</h1>
+  <p>BIT&nbsp;/&nbsp;BRIEF is a personal automation project. Once a day it reads technology
+     news from a fixed list of established publications, picks the single story most worth
+     watching, writes a short script in Spanish and English, and renders a vertical video
+     for TikTok, Instagram Reels and YouTube Shorts.</p>
+  <p>Every video is reviewed and approved by a person before anything is published.</p>
+
+  <div class="card">
+    <h2 style="margin-top:0">How it works</h2>
+    <ol>
+      <li>Collect the day's stories from trusted technology publications via their public feeds.</li>
+      <li>Select one story and write the script, crediting and linking the original source.</li>
+      <li>Render a vertical video with narration and captions.</li>
+      <li>Email the result to the operator for approval.</li>
+      <li>Publish only after a human approves it.</li>
+    </ol>
+  </div>
+
+  <h2>Sources and attribution</h2>
+  <p>Stories come from established technology publications. Each video names the publication
+     on screen, and the original article is linked in the post description. The project
+     summarises and links to reporting; it does not reproduce articles.</p>
+
+  <h2>Contact</h2>
+  <p>This is an individual project maintained by
+     <a href="https://github.com/IBrito993">IBrito993</a> on GitHub. Questions, corrections
+     and takedown requests can be raised there.</p>
+
+  <footer>
+    <a href="./privacy.html">Privacy policy</a>
+  </footer>
+</div>
+</body>
+</html>
