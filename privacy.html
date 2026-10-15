@@ -34,6 +34,17 @@
      individual for their own use. It has no user accounts, no sign-up, and no visitors other
      than its operator.</p>
 
+  <div class="card">
+    <h2 style="margin-top:0">YouTube API Services</h2>
+    <p style="margin:0 0 12px">This application uses <strong>YouTube API Services</strong> to upload
+       videos to its operator's own YouTube channel. By using the application you also agree to the
+       <a href="https://www.youtube.com/t/terms" target="_blank" rel="noreferrer">YouTube Terms of Service</a>.</p>
+    <p style="margin:0">Google's own handling of your information is described in the
+       <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy</a>.
+       You can review and revoke this application's access to your Google Account at any time at
+       <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google security settings</a>.</p>
+  </div>
+
   <h2>What the application does with Google data</h2>
   <p>The application acts <strong>only on the Google Account of its operator</strong>, who is also
      its developer. It requests two permissions:</p>
@@ -85,10 +96,24 @@
      <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google Account
      permissions</a>. Revoking access immediately stops all email and upload activity.</p>
 
-  <h2>Retention</h2>
-  <p>Local material is kept only as long as it is useful and may be deleted at any time.
-     Revoking access or deleting the local token file ends the application's ability to act on
-     the Google Account.</p>
+  <h2>Retention and deletion of data</h2>
+  <p>The application stores no personal data about anyone other than its operator, and stores
+     nothing on a server. What exists is held locally on the operator's own computer:</p>
+  <ul>
+    <li><strong>Google authorisation tokens</strong> — deleted by removing the local token file,
+        or by revoking access at
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google
+        security settings</a>. Either action immediately and permanently ends the application's
+        ability to send email or upload videos.</li>
+    <li><strong>Generated scripts and rendered videos</strong> — deleted by deleting the local
+        files. They are regenerated on demand and kept no longer than they are useful.</li>
+    <li><strong>YouTube API data</strong> — the application stores no YouTube user data. It
+        retains only the video ID returned after an upload, so it does not upload the same video
+        twice. Deleting the local database removes those IDs.</li>
+  </ul>
+  <p>Because there are no other users, there is no third party whose data could be retained, and
+     therefore no deletion request process is required. The operator can delete everything at any
+     time by removing the local files and revoking access.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the date at the top of this page will be updated.</p>
